@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wiki Monster</title>
+    <!-- CSS DE BOOTSRAP -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css">
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        :root {
+        --color-dark: #150B0A;
+        --color-brown: #3E2D2D;
+        --color-beige: #847657;
+        --color-green: #385329;
+        --color-white: #FFFAEF;
+        --color-text: #f5f5f5;
+        }
+        .custom-navbar{
+        background-color: var(--color-brown);
+        color: var(--color-text);}
+        .custom-search{
+        background-color: var(--color-white);
+        color: var(--color-dark);}
+    </style>
+
+</head>
+<body class="d-flex flex-column min-vh-100">
+
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-dark custom-navbar">
+        <div class="container">
+            <a class="navbar-brand" href="#">Wiki Monster</a>
+        </div>
+    </nav>
+
+
+    <!-- CONTENIDO PRINCIPAL -->
+    <div class="container my-4 flex-grow-1">
+
+        <!-- Botón o navegación superior -->
+        <div class="mb-3">
+            <button class="btn btn-secondary custom-search">&larr;</button>
+        </div>
+
+        <div class="row">
+            <!-- Columna izquierda -->
+            <div class="col-md-6">
+                <div class="card mb-3">
+                    <img src="https://via.placeholder.com/500x300" class="card-img-top" alt="imagen">
+                    <div class="card-body">
+                        <h5 class="card-title">Título principal</h5>
+                        <p class="card-text">
+                            Descripción o contenido principal del elemento.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-body">
+                        <h6>Detalles adicionales</h6>
+                        <p>Más información organizada en bloques.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Columna derecha -->
+            <div class="col-md-6">
+                <div class="card mb-3">
+                    <div class="card-body">
+                        <h6>Información 1</h6>
+                        <p>Texto descriptivo.</p>
+                        <p>Más líneas de información.</p>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-body">
+                        <h6>Información 2</h6>
+                        <p>Texto adicional.</p>
+                        <p>Más contenido aquí.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- BOTÓN CENTRAL -->
+        <div class="text-center my-4">
+            <button class="btn-lg btn-secondary px-5 custom-search">Buscador</button>
+        </div>
+
+    </div>
+
+    <!-- FOOTER -->
+    <footer class="custom-navbar text-light py-3">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-2">
+                    <div class="bg-secondary" style="height:40px;"></div>
+                </div>
+                <div class="col-md-10">
+                    <p class="mb-1">Texto de pie de página</p>
+                    <p class="mb-0">Más información</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JS Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
