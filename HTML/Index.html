@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Index_Monster_Hunter_World</title>
+</head>
+<body>
+    <div class="container">
+        <h1>BOOTSTRAP 5.3</h1>
+        <h2>Probando el framework de CSS de BOOTSTRAP</h2>
+        <a href="https://getbootstrap.com/docs/5.3/getting-started/introduction/" target="_blank" rel="noopener norefferer">
+            Documentación oficial
+        </a>
+    </div>
+    <!-- Estructura básica de grid de bootstrap -->
+    <div class="container text-center my-4 v-purple">
+        <div class="row">
+            <div class="col">Columna 1</div>
+            <div class="col">Columna 2</div>
+            <div class="col">Columna 3</div>
+            <div class="col">Columna 3</div>     
+        </div>
+        <div class="row py-3">
+            <div class="col-lg-4">
+                Caja con un 33.333% de Ancho
+            </div>
+            <div  class="col-lg-8">
+                Caja con un 66.666% de Ancho
+            </div>
+        </div>
+    </div>
+
+    <!-- Sistema de grid responsive de filas y columnas -->
+        <div class="container text-center v-responsive">
+            <h2>Usando un sistema responsive de grid de Bootstrap</h2>
+            <div class="row">
+                <div class="col-md-6 col-lg-3">Columna 1</div>  
+                <div class="col-md-6 col-lg-3">Columna 2</div>
+                <div class="col-md-6 col-lg-3">Columna 3</div>
+                <div class="col-md-6 col-lg-3">Columna 4</div>
+            </div>
+        </div>
+        <!-- Ejemplo de filas y columnas anidadas -->
+         <div class="container-fluid my-4 v-nest">
+            <h2>Este contenedor ocupará todo el ancho de la pantalla</h2>
+            <div class="row">
+                <div class="col">
+                    Primera Caja
+                </div>
+                <div class="col">
+                    <div class="row">
+                        <div class="col">Caja anidada 1</div>
+                        <div class="col">Caja anidada 2</div>
+                    </div>
+                </div>
+            </div>
+         </div>
+         <!-- EJEMPLO FORM -->
+          <div class="container">
+            <form>
+                <div class="mb-3">
+                    <label for="exampleInputEmail1" class="form-label">Email address</label>
+                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                    <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                </div>
+                <div class="mb-3">
+                    <label for="exampleInputPassword1" class="form-label">Password</label>
+                    <input type="password" class="form-control" id="exampleInputPassword1">
+                </div>
+                <div class="mb-3 form-check">
+                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                    <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                </div>
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+          </div>
+
+            <!-- FORMA DE VALIDACIÓN-->
+           <div class="container">
+            <h2>Formulario de validación</h2>
+                <form class="row g-3 needs-validation" novalidate>
+                    <div class="col-md-4">
+                        <label for="validationCustom01" class="form-label">First name</label>
+                        <input type="text" class="form-control" id="validationCustom01" value="Mark" required>
+                        <div class="valid-feedback">
+                        Looks good!
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <label for="validationCustom02" class="form-label">Last name</label>
+                        <input type="text" class="form-control" id="validationCustom02" value="Otto" required>
+                        <div class="valid-feedback">
+                        Looks good!
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <label for="validationCustomUsername" class="form-label">Username</label>
+                        <div class="input-group has-validation">
+                        <span class="input-group-text" id="inputGroupPrepend">@</span>
+                        <input type="text" class="form-control" id="validationCustomUsername" aria-describedby="inputGroupPrepend" required>
+                        <div class="invalid-feedback">
+                            Please choose a username.
+                        </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <label for="validationCustom03" class="form-label">City</label>
+                        <input type="text" class="form-control" id="validationCustom03" required>
+                        <div class="invalid-feedback">
+                        Please provide a valid city.
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <label for="validationCustom04" class="form-label">State</label>
+                        <select class="form-select" id="validationCustom04" required>
+                        <option selected disabled value="">Choose...</option>
+                        <option>...</option>
+                        </select>
+                        <div class="invalid-feedback">
+                        Please select a valid state.
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <label for="validationCustom05" class="form-label">Zip</label>
+                        <input type="text" class="form-control" id="validationCustom05" required>
+                        <div class="invalid-feedback">
+                        Please provide a valid zip.
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+                        <label class="form-check-label" for="invalidCheck">
+                            Agree to terms and conditions
+                        </label>
+                        <div class="invalid-feedback">
+                            You must agree before submitting.
+                        </div>
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <button class="btn btn-primary" type="submit">Submit form</button>
+                    </div>
+                </form>
+           </div>
+
+            <!-- JS DE BOOTSTRAP -->
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" 
+            integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" 
+            crossorigin="anonymous"></script>
+
+            <!-- MI PROPIO JS -->
+             <script src="js/script.js"></script>>
+    </body> 
+</body>
+</html>
