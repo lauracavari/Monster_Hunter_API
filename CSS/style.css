@@ -1,14 +1,5 @@
-    :root {
-    --color-dark: #150B0A;
-    --color-brown: #3E2D2D;
-    --color-beige: #847657;
-    --color-green: #385329;
-    --color-white: #FFFAEF;
-    --color-text: #f5f5f5;
-    }
-
 body {
-        background-image: url('..//Media/Fondo_MonsterHunterWorld.jpg'); /* Image URL */
+        background-image: url('https://picsum.photos/seed/patu/1920/1080'); /* Image URL */
         background-size: cover; /* Scale image to cover entire area */
         background-position: center; /* Center the image */
         background-repeat: no-repeat; /* Prevent tiling */
@@ -21,11 +12,3 @@ body {
     border: rgb(255, 94, 0) 1px solid;
     color: rgb(230, 230, 230);
 }
-
-
-    .custom-navbar{
-    background-color: var(--color-brown);
-    color: var(--color-text);}
-    .custom-search{
-    background-color: var(--color-white);
-    color: var(--color-dark);}
