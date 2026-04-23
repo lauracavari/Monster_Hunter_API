@@ -16,6 +16,7 @@ body {
 
 }
 
+
 .banner{
   height: 300px;      
   overflow: hidden;
@@ -31,15 +32,6 @@ body {
     display: flex;
     justify-content: center;
     margin: 20px 0;
-}
-
-.placeholder_Grid {
-    top: auto;
-    background-color: white;
-    row-gap: inherit;
-    border-radius: 10px;
-    overflow: hidden;
-    margin:auto; 
 }
 
 .infBox p[class*="lead"] {
