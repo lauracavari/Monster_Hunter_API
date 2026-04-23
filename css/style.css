@@ -50,9 +50,10 @@ body {
 }
 
 
-    .custom-navbar{
+.custom-navbar{
     background-color: var(--color-brown);
     color: var(--color-text);}
     .custom-search{
     background-color: var(--color-white);
-    color: var(--color-dark);}
+    color: var(--color-dark);
+}
