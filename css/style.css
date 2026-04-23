@@ -13,6 +13,25 @@ body {
         background-position: center; /* Center the image */
         background-repeat: no-repeat; /* Prevent tiling */
         background-attachment: fixed; /* Keep image fixed during scroll */
+
+}
+
+
+.banner{
+  height: 300px;      
+  overflow: hidden;
+}
+
+.IMGheader {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.searchButton {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
 }
 
 .infBox p[class*="lead"] {
