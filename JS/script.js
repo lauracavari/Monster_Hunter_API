@@ -3,7 +3,7 @@ $(document).ready(function(){
     console.log("ready!");
     const $cont = $("#userCont");
 
-    fetch("https://randomuser.me/api/")
+    fetch("https://mhw-db.com")
         .then(function(response){
             if(!response.ok){
                 throw new Error ("Error al obtener los datos de la API")
