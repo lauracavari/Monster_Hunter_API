@@ -39,18 +39,33 @@
 
     <div class="Monster_Grid container-fluid col-xxl-11 g-1 px-4">
         <div class="row px-4 py-3">
-            <div class="btn-group">
-            <a href="#" class="btn btn-primary active" id="pReset">All</a>
-            <a href="#" class="btn btn-primary" id="pAF">Ancient Forest</a>
-            <a href="#" class="btn btn-primary" id="pWW">Wildspire Waste</a>
-            <a href="#" class="btn btn-primary" id="pCH">Coral Highlands</a>
-            <a href="#" class="btn btn-primary" id="pRV">Rotten Vale</a>
-            <a href="#" class="btn btn-primary" id="pER">Elder's Recess</a>
+            <div class="btn-group d-none d-lg-block">
+            <a href="#" class="pReset btn btn-primary active" id="pReset">All</a>
+            <a href="#" class="pAF btn btn-primary" id="pAF">Ancient Forest</a>
+            <a href="#" class="pWW btn btn-primary" id="pWW">Wildspire Waste</a>
+            <a href="#" class="pCH btn btn-primary" id="pCH">Coral Highlands</a>
+            <a href="#" class="pRV btn btn-primary" id="pRV">Rotten Vale</a>
+            <a href="#" class="pER btn btn-primary" id="pER">Elder's Recess</a>
+            </div>
+
+            <div class="dropdown d-lg-none">
+                <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Dropdown button
+                </button>
+                <ul class="dropdown-menu">
+                    <li><a href="#" class="pReset btn btn-primary dropdown-item active" id="pReset">All</a></li>
+                    <li><a href="#" class="pAF btn btn-primary dropdown-item" id="pAF">Ancient Forest</a></li>
+                    <li><a href="#" class="pWW btn btn-primary dropdown-item" id="pWW">Wildspire Waste</a></li>
+                    <li><a href="#" class="pCH btn btn-primary dropdown-item" id="pCH">Coral Highlands</a></li>
+                    <li><a href="#" class="pRV btn btn-primary dropdown-item" id="pRV">Rotten Vale</a></li>
+                    <li><a href="#" class="pER btn btn-primary dropdown-item" id="pER">Elder's Recess</a>
+                </ul>
             </div>
         </div>
         <div class="row row-cols-1 row-cols-md-4 g-4 py-3 grid d-flex justify-content-center" id="monsterCont">
         </div>
     </div> 
+
     
     <!--FOOTER -->
     <footer class="custom-navbar text-light py-3">
