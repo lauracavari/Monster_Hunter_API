@@ -23,42 +23,60 @@
     
 </head>
 
-  <body>
-      <div class="banner">
-        <img class="IMGheader" src="Media\monster-hunter-gq.webp" alt="">
-      </div>
-      
-      <div class="searchButton">
-          <form class="d-flex" role="search">
-            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
-            <button class="btn btn-outline-success" type="submit">Search</button>
-          </form>
-      </div>
-        <!-- PlaceHolder
-      <div class="placeholder_Grid">
-        <div class="row gx-5 xs-col">
-          <div class="col">Monstruo 1 <img src="Media/HousePlaceGrid.png" class="img-thumbnail" alt="..."></div>
-          <div class="col">Monstruo 2 <img src="Media/HousePlaceGrid.png" class="img-thumbnail" alt="..."></div>
-          <div class="col">Monstruo 3 <img src="Media/HousePlaceGrid.png" class="img-thumbnail" alt="..."></div>
-          <div class="col">Monstruo 4 <img src="Media/HousePlaceGrid.png" class="img-thumbnail" alt="..."></div>
+<body>
+    <div class="banner">
+      <img class="IMGheader" src="Media\monster-hunter-gq.webp" alt="">
+    </div>
+    
+    <div class="searchButton">
+        <form class="d-flex" role="search">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
+          <button class="btn btn-outline-success" type="submit">Search</button>
+        </form>
+    </div>
+
+
+
+    <div class="Monster_Grid container-fluid col-xxl-11 g-1 px-4">
+        <div class="row px-4 py-3">
+            <div class="btn-group">
+            <a href="#" class="btn btn-primary active" id="pReset">All</a>
+            <a href="#" class="btn btn-primary" id="pAF">Ancient Forest</a>
+            <a href="#" class="btn btn-primary" id="pWW">Wildspire Waste</a>
+            <a href="#" class="btn btn-primary" id="pCH">Coral Highlands</a>
+            <a href="#" class="btn btn-primary" id="pRV">Rotten Vale</a>
+            <a href="#" class="btn btn-primary" id="pER">Elder's Recess</a>
+            </div>
         </div>
-      </div>  -->
-      
-      <!-- FOOTER -->
-      <div class="footer">
-        <footer class="custom-navbar text-light py-3">
-          <div class="container">
-              <div class="row">
-                  <div class="col-md-2">
-                      <div class="bg-secondary" style="height:40px;"></div>
-                  </div>
-                  <div class="col-md-10">
-                      <p class="mb-1">Texto de pie de página</p>
-                      <p class="mb-0">Más información</p>
-                  </div>
-              </div>
-          </div>
-        </footer>
-      </div>
-  </body>
+        <div class="row row-cols-1 row-cols-md-4 g-4 py-3 grid d-flex justify-content-center" id="monsterCont">
+        </div>
+    </div> 
+    
+    <!--FOOTER -->
+    <footer class="custom-navbar text-light py-3">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-2">
+                    <div class="bg-secondary" style="height:40px;"></div>
+                </div>
+                <div class="col-md-10">
+                    <p class="mb-1">Texto de pie de página</p>
+                    <p class="mb-0">Más información</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+<!--Jquery js-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+<!-- Bootstrap js -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+
+<!-- Our Js of Monster_Dex-->
+    <script src="JS/script.js"></script>
+
+<!-- Isotope js-->
+    <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
+</body>
+
 </html>
