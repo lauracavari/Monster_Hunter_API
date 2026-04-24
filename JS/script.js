@@ -3,7 +3,6 @@ $(document).ready(function(){
 
     console.log("ready!");
     const $cont = $("#monsterCont");
-    const $loading = $("#loading");
 
     fetch("https://mhw-db.com/monsters")
         .then(function(response){
@@ -31,16 +30,17 @@ $(document).ready(function(){
 
                 let card = `
                 <div class="col-xxl-3 col-md-4 col-sm-12 ${usersArr[i].id} ${species} ${locationClasses}">
-                    <div class="card h-100 user-card shadow align-items center p-2">
-                        <img src="Media/PlaceHolders.webp"
-                                class="card-img-top user-img  p-3"
-                                alt="${usersArr[i].id}">
-                        <div class="card-body">
-                            <h5 class="card-title">${usersArr[i].name}</h5>
-                            <p class="card-text">${usersArr[i].species}</p>
-                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                    <a href="#" class="text-decoration-none text-dark">
+                        <div class="card h-100 user-card shadow align-items center p-2">
+                            <img src="Media/img/${usersArr[i].id}.webp"
+                                    class="card-img-top monster-img user-img p-3"
+                                a   lt="${usersArr[i].name}">
+                            <div class="card-body">
+                                <h5 class="card-title">${usersArr[i].name}</h5>
+                                <p class="card-text">${usersArr[i].species}</p>
+                            </div>
                         </div>
-                    </div>
+                    </a>
                 </div>
             `;
 
@@ -84,7 +84,6 @@ $(document).ready(function(){
         });
         $PR.on("click", function(){
             $grid.isotope({ filter: '*' })
-            $loading.hide();
         });
 
 })
