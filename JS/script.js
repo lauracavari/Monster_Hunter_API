@@ -3,6 +3,7 @@ $(document).ready(function(){
 
     console.log("ready!");
     const $cont = $("#monsterCont");
+    const $grid = $(".grid");
 
     fetch("https://mhw-db.com/monsters")
         .then(function(response){
@@ -47,9 +48,14 @@ $(document).ready(function(){
             $cont.append(card)
             }
         })
+        .finally(function(){
+            $grid.isotope({ filter: '*' })
+        })
 
 
-        const $grid = $(".grid");
+
+
+
 
         const $AF = $(".pAF");
         const $WW = $(".pWW");
