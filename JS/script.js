@@ -47,26 +47,16 @@ $(document).ready(function(){
             $cont.append(card)
             }
         })
-        .finally(function(){
-            //ocultamos el mensaje de cargando...
-            $loading.hide();
-        })
+
 
         const $grid = $(".grid");
 
-        const $buttons = $("#pAF, #pWW, #pRV, #pER, #pCH, #pReset");
-
-        $buttons.on("click", function () {
-            $buttons.removeClass("active");   // remove from all
-            $(this).addClass("active");       // add to clicked one
-        });
-
-        const $AF = $("#pAF");
-        const $WW = $("#pWW");
-        const $RV = $("#pRV");
-        const $ER = $("#pER");
-        const $CH = $("#pCH");
-        const $PR = $("#pReset");
+        const $AF = $(".pAF");
+        const $WW = $(".pWW");
+        const $RV = $(".pRV");
+        const $ER = $(".pER");
+        const $CH = $(".pCH");
+        const $PR = $(".pReset");
         $AF.on("click", function(){
             $grid.isotope({ filter: '.ancient-forest' })
         });
