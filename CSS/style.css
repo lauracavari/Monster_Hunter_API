@@ -79,3 +79,12 @@ body {
     background-color: var(--color-white);
     color: var(--color-dark);
 }
+
+
+.container-fluid .btn{
+    margin-bottom: 50px;
+    background-color: #3E2D2D;
+    border: rgb(67, 36, 19) 1px solid;
+    cursor: pointer;
+    box-shadow: 0 9px #1d1d1d;
+}
