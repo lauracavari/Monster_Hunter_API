@@ -34,6 +34,7 @@ body {
     margin: 20px 0;
 }
 
+<<<<<<< HEAD
 .Monster_Grid {
     top: auto;
     background-color: var(--color-dark);
@@ -47,12 +48,16 @@ body {
     height: 200px;
     width: 100%;
     object-fit: contain;
+=======
+h1 {
+  color: white;
+>>>>>>> LauraCavanillasRios
 }
 
 .infBox p[class*="lead"] {
     padding: 1rem 2rem;
-    background-color: rgb(36, 15, 2);
-    border: rgb(255, 94, 0) 1px solid;
+    background-color: rgb(20, 9, 2);
+    border: rgb(67, 36, 19) 1px solid;
     color: rgb(230, 230, 230);
 }
 
