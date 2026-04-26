@@ -15,7 +15,7 @@ $(document).ready(function(){
     opacity: 1,
     rotation: 0,
     scale: 1,
-    duration: 2.5,
+    duration: 3,
     ease: "power3.out",
     scrollTrigger: {
         trigger: "#carouselExampleIndicators",
@@ -28,7 +28,7 @@ $(document).ready(function(){
     opacity: 1,
     rotation: 0,
     scale: 1,
-    duration: 2.5,
+    duration: 3,
     ease: "power3.out",
     scrollTrigger: {
         trigger: "#carouselExampleIndicators",
