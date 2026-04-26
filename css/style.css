@@ -43,6 +43,19 @@ body {
     margin:auto; 
 }
 
+.card {
+    --bs-card-bg: var(--color-brown);
+    color: var(--color-text);
+}
+
+.dropdown-item.active {
+    background-color: #146c43;
+}
+
+.dropdown-menu.show {
+    background-color: #104b2f;
+}
+
 .monster-img{
     height: 200px;
     width: 100%;

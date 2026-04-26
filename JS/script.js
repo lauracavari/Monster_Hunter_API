@@ -36,7 +36,7 @@ $(document).ready(function(){
                                     class="card-img-top monster-img user-img p-3"
                                 a   lt="${usersArr[i].name}">
                             <div class="card-body">
-                                <h5 class="card-title">${usersArr[i].name}</h5>
+                                <h5 class="card-title text-decoration-underline">${usersArr[i].name}</h5>
                                 <p class="card-text">${species}</p>
                             </div>
                         </div>
