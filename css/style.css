@@ -16,7 +16,18 @@ body {
 
 }
 
-
+/* POSICIONAMIENTO DE LAS IMAGENES PARA UTILIZAR GSAP */
+.img-monster {
+  width: 100%;
+  opacity: 0;
+  transform: rotate(-20deg) scale(1);
+}
+.img-monster2 {
+  width: 100%;
+  opacity: 0;
+  transform: rotate(20deg) scale(1);
+}
+/* ----------------------------------------------- */
 .banner{
   height: 300px;      
   overflow: hidden;
