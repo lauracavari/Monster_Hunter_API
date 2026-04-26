@@ -34,6 +34,10 @@ body {
     margin: 20px 0;
 }
 
+/* <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> LauraCavanillasRios */
 .Monster_Grid {
     top: auto;
     background-color: var(--color-dark);
@@ -61,11 +65,19 @@ body {
     width: 100%;
     object-fit: contain;
 }
+/* <<<<<<< HEAD
+======= */
+h1 {
+  color: white;
+/* >>>>>>> LauraCavanillasRios
+=======
+>>>>>>> LauraCavanillasRios */
+}
 
 .infBox p[class*="lead"] {
     padding: 1rem 2rem;
-    background-color: rgb(36, 15, 2);
-    border: rgb(255, 94, 0) 1px solid;
+    background-color: rgb(20, 9, 2);
+    border: rgb(67, 36, 19) 1px solid;
     color: rgb(230, 230, 230);
 }
 
@@ -78,4 +90,13 @@ body {
 .custom-search{
     background-color: var(--color-white);
     color: var(--color-dark);
+}
+
+
+.container-fluid .btn{
+    margin-bottom: 50px;
+    background-color: #3E2D2D;
+    border: rgb(67, 36, 19) 1px solid;
+    cursor: pointer;
+    box-shadow: 0 9px #1d1d1d;
 }
