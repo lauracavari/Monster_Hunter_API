@@ -21,8 +21,24 @@ $(document).ready(function(){
             species = species.charAt(0).toUpperCase() + species.slice(1).toLowerCase();
 
             let type = data.type;
-            type = type.charAt(0).toUpperCase() + type.slice(1).toLowerCase();            
-            
+            type = type.charAt(0).toUpperCase() + type.slice(1).toLowerCase();
+
+            //★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★
+
+            let locationsText = Array.isArray(data.locations) 
+                ? data.locations.map(function(loc) { 
+                    return loc.name || loc; 
+                }).join(", ")
+                : "No disponible";
+
+            let weaknessesText = Array.isArray(data.weaknesses)
+                ? data.weaknesses.map(function(w) {
+                    return w.element + " (" + w.stars + "★)";
+                }).join(", ")
+                : "No disponible";
+
+            //★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★
+
             let infoMonster = `
             <div class="col-md-6">
                 <div class="card mb-3 custom-navbar">
@@ -36,7 +52,7 @@ $(document).ready(function(){
                 <div class="card custom-navbar">
                     <div class="card-body custom-navbar">
                         <h6>Descripción</h6>
-                        <p>${data.type}</p>
+                        <p>${data.description }</p>
                     </div>
                 </div>
             </div>
@@ -44,7 +60,7 @@ $(document).ready(function(){
                 <div class="card mb-3 custom-navbar">
                     <div class="card-body custom-navbar">
                         <h6>Localizaciones y Recompensas</h6>
-                        <p>${data.locations}</p>
+                        <p>${locationsText}</p>
                         <p>Más líneas de información.</p>
                     </div>
                 </div>
@@ -52,7 +68,7 @@ $(document).ready(function(){
                 <div class="card custom-navbar">
                     <div class="card-body custom-navbar">
                         <h6>Debilidades</h6>
-                        <p>${data.weaknesses}</p>
+                        <p>${weaknessesText}</p>
                     </div>
                 </div>
             </div>
@@ -65,7 +81,7 @@ $(document).ready(function(){
         })
         .finally(function(){
 
-        })
+    })
 
 });
 
