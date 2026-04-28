@@ -14,7 +14,7 @@ $(document).ready(function(){
             console.log(result);
 
             let gameData = result.data;
-            let gameDetailsHTML = `
+            let monsterDetailCont = `
                 <div class="col-md-12 col-lg-4 text-center">
                     <img src="media/img/${gameID}.jpg" alt="${gameData.name}" class="img-fluid">
                 </div>
@@ -24,7 +24,7 @@ $(document).ready(function(){
                 </div>
             `
 
-            gameCont.append(gameDetailsHTML);
+            gameCont.append(monsterDetailCont);
         })
         .catch(function(){
 
@@ -32,4 +32,7 @@ $(document).ready(function(){
         .finally(function(){
 
         })
+
+        console.log(JSON.parse(localStorage.getItem('myObject')));
+
 });

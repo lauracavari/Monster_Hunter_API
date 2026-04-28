@@ -30,7 +30,7 @@ $(document).ready(function(){
 
                 let card = `
                 <div class="col-xxl-3 col-md-4 col-sm-12 ${usersArr[i].id} ${locationClasses}">
-                    <a href="#" class="text-decoration-none text-dark">
+                    <a href="WikiMonster.html" class="text-decoration-none text-dark">
                         <div class="card h-100 user-card shadow align-items center p-2">
                             <img src="Media/img/${usersArr[i].id}.webp"
                                     class="card-img-top monster-img user-img p-3"
@@ -41,19 +41,38 @@ $(document).ready(function(){
                             </div>
                         </div>
                     </a>
+                    localStorage.setItem('myObjecto', JSON.stringify(usersArr[i]));
                 </div>
             `;
 
             $cont.append(card)
             }
         })
+
+        .then(function(data){
+            console.log(result);
+
+            let monsterArray = result.data;
+
+            monsterArray.foreach(function(game){
+
+                let linkMonster = document.createElement("a");
+
+
+            });
+
+
+
+        })
+
         .finally(function(){
             $grid.isotope({ filter: '*' })
         })
 
 
+        console.log(JSON.parse(localStorage.getItem('myObject')));
 
-
+        
 
         const $buttons = $(".pAF, .pWW, .pRV, .pER, .pCH, .pReset");
         const $DText = $(".dropdown-toggle");
