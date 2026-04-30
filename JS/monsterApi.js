@@ -61,7 +61,6 @@ $(document).ready(function(){
                     <div class="card-body custom-navbar">
                         <h6>Localizaciones y Recompensas</h6>
                         <p>${locationsText}</p>
-                        <p>Más líneas de información.</p>
                     </div>
                 </div>
 
