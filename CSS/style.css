@@ -84,8 +84,8 @@ h1 {
 
 .infBox p[class*="lead"] {
     padding: 1rem 2rem;
-    min-height: 200px;
-    background: url("../Media/Caja_Horizontal.svg") no-repeat center;
+    min-height: 200%;
+    background: url("../Media/Caja_Horizontal.png") no-repeat center;
     background-size: contain; 
     border: none;
     color: rgb(230, 230, 230);
@@ -95,7 +95,7 @@ h1 {
 .custom-btn {
   padding: 30px 20px; /* tamaño del botón */
   color: var(--color-dark);
-  background: url("../Media/Boton.svg") no-repeat center;
+  background: url("../Media/Boton.png") no-repeat center;
   background-size: contain;
   border: none;
    
@@ -103,7 +103,7 @@ h1 {
 
 /* Caja de textos personalizados monsterEdex*/
 .user-card {
-  background: url("../media/Caja_grande.svg") no-repeat center;
+  background: url("../media/Caja_grande.png") no-repeat center;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -121,16 +121,15 @@ h1 {
 
 /* Caja de textos personalizados WikiMonster */
 .card {
-  background-image: url("../media/Caja_grande.svg");
-  background-size: cover;
-  background-position: center;
+  background-image: url("../media/Caja_grande.png");
+  background-size: 100% 100%;
   background-repeat: no-repeat;
 }
 
 .custom-search-bottom{
     padding: 10px 20px; /* tamaño del botón */
   color: var(--color-dark);
-  background: url("../Media/Boton_horizontal.svg") no-repeat center;
+  background: url("../Media/Boton_horizontal.png") no-repeat center;
   background-size: contain;
   border: none;
   margin-top: 20px;
@@ -140,7 +139,7 @@ h1 {
   flex-direction: column;
   justify-content: space-between;
   text-align: center;
-  background-image: url("../media/Caja_Horizontal.svg");
+  background-image: url("../media/Caja_Horizontal.png");
 }
  /* .card-body {
   flex-grow: 1;
@@ -166,5 +165,7 @@ h1 {
   border: none;
 }
 
-
+.col-md-10 p {
+  transform: translateY(40px);
+}
 
