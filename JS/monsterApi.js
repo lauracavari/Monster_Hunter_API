@@ -44,9 +44,9 @@ $(document).ready(function(){
 
             <div class="col justify-content-center ">
                 <div class="card mb-3 custom-navbar h-100">
-                    <div class="justify-content-center g-10">
-                        <img src="Media/img/1.webp" class="card-img-top p-10" alt="imagen">
-                    </div>
+
+                        <img src="Media/img/${data.id}.webp" class="card-img-top h-10" alt="imagen" >
+
                     <div class="card-body text-center ">
                         <h5 class="card-title">Nombre del monstruo: ${data.name}</h5>
                         <h5 class="card-subtitle">Tipo: ${species}</h5>
