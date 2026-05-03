@@ -42,10 +42,12 @@ $(document).ready(function(){
             let infoMonster = `
             <div class="row row-cols-1 row-cols-md-2 justify-content-center g-4">
 
-            <div class="col">
-                <div class="card mb-3 custom-navbar">
-                    <img src="Media/img/1.webp" class="card-img-top w-75" alt="imagen">
-                    <div class="card-body">
+            <div class="col justify-content-center ">
+                <div class="card mb-3 custom-navbar h-100">
+                    <div class="justify-content-center g-10">
+                        <img src="Media/img/1.webp" class="card-img-top p-10" alt="imagen">
+                    </div>
+                    <div class="card-body text-center ">
                         <h5 class="card-title">Nombre del monstruo: ${data.name}</h5>
                         <h5 class="card-subtitle">Tipo: ${species}</h5>
                     </div>
@@ -53,7 +55,7 @@ $(document).ready(function(){
             </div>
 
             <div class="col">
-                <div class="card mb-3 custom-navbar">
+                <div class="card mb-3 custom-navbar h-100">
                     <div class="card-body custom-navbar">
                         <h6>Descripción</h6>
                         <p>${data.description }</p>
@@ -62,7 +64,7 @@ $(document).ready(function(){
             </div>
             
             <div class="col">
-                <div class="card mb-3 custom-navbar">
+                <div class="card mb-3 custom-navbar h-100">
                     <div class="card-body custom-navbar">
                             <h6>Localizaciones y Recompensas</h6>
                             <p>${locationsText}</p>
@@ -72,7 +74,7 @@ $(document).ready(function(){
             </div>
 
             <div class="col">
-                    <div class="card mb-3 custom-navbar">
+                    <div class="card mb-3 custom-navbar h-100">
                         <div class="card-body custom-navbar">
                             <h6>Debilidades</h6>
                             <p>${weaknessesText}</p>
