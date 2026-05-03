@@ -40,38 +40,47 @@ $(document).ready(function(){
             //★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★
 
             let infoMonster = `
-            <div class="col-md-6">
+            <div class="row row-cols-1 row-cols-md-2 justify-content-center g-4">
+
+            <div class="col">
                 <div class="card mb-3 custom-navbar">
-                    <img src="Media/img/${data.id}.webp" class="card-img-top" alt="imagen">
+                    <img src="Media/img/1.webp" class="card-img-top w-75" alt="imagen">
                     <div class="card-body">
                         <h5 class="card-title">Nombre del monstruo: ${data.name}</h5>
                         <h5 class="card-subtitle">Tipo: ${species}</h5>
                     </div>
                 </div>
+            </div>
 
-                <div class="card custom-navbar">
+            <div class="col">
+                <div class="card mb-3 custom-navbar">
                     <div class="card-body custom-navbar">
                         <h6>Descripción</h6>
                         <p>${data.description }</p>
                     </div>
                 </div>
             </div>
-            <div class="col-md-6">
+            
+            <div class="col">
                 <div class="card mb-3 custom-navbar">
                     <div class="card-body custom-navbar">
-                        <h6>Localizaciones y Recompensas</h6>
-                        <p>${locationsText}</p>
-                        <p>Más líneas de información.</p>
-                    </div>
-                </div>
-
-                <div class="card custom-navbar">
-                    <div class="card-body custom-navbar">
-                        <h6>Debilidades</h6>
-                        <p>${weaknessesText}</p>
+                            <h6>Localizaciones y Recompensas</h6>
+                            <p>${locationsText}</p>
+                            <p>Más líneas de información.</p>
                     </div>
                 </div>
             </div>
+
+            <div class="col">
+                    <div class="card mb-3 custom-navbar">
+                        <div class="card-body custom-navbar">
+                            <h6>Debilidades</h6>
+                            <p>${weaknessesText}</p>
+                        </div>
+                    </div>
+                </div>            
+            </div>
+        </div>
             `
 
             gameCont.append(infoMonster);
