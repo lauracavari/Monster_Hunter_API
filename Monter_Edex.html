@@ -8,9 +8,11 @@
 
     <link rel="stylesheet" href="CSS\style.css">
     
+    <!-- Fontawesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
     <!-- NavBar -->
-    <nav class="navbar navbar-dark custom-navbar">
+    <!-- <nav class="navbar navbar-dark custom-navbar">
       <div class="container-fluid">
         <a class="navbar-brand" href="index.html">Landscape</a>
         <form class="d-flex" role="search">
@@ -18,11 +20,24 @@
           <button class="btn btn-outline-success" type="submit">Search</button>
         </form>
       </div>
-    </nav>
+    </nav> -->
     
 </head>
 
 <body>
+<!-- NAVBAR -->
+   <nav class="navbar navbar-dark custom-navbar">
+        <div class="container">
+             <a class="navbar-brand d-flex align-items-center" href="#">
+                <img src="media/Monster-hunter-world-logo.webp" alt="Logo" height="40" class="me-2">
+            </a>
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
+              <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+        </div>
+   </nav>
+
     <div class="banner">
       <img class="IMGheader" src="Media\monster-hunter-gq.webp" alt="">
     </div>
@@ -69,7 +84,7 @@
     </div> 
 
     
-    <!--FOOTER -->
+    <!-- FOOTER
     <footer class="custom-navbar text-light py-3">
             <div class="dropdown d-lg-none">
                 <button class="btn btn-lg btn-success dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -87,7 +102,61 @@
         </div>
         <div class="row row-cols-1 row-cols-md-4 g-4 py-3 grid d-flex justify-content-center" id="monsterCont">
         </div>
-    </div> 
+    </div> -->
+
+    <!-- FOOTER -->
+    <footer class="custom-navbar text-light py-3">
+
+        <div class="container text-center align-items-center">
+
+            <div class="row align-items-center">
+              <div class="col-md-3 align-items-center">  
+                <img src="Media/Monster-hunter-world-logo.webp" class="img-fluid" alt="">
+
+              </div>
+              <div class="col-md-6">
+
+                <div class="h5 text-center align-items-center font-monospace">
+
+                  <p>© CAPCOM CO., LTD. 2018, 2019 All rights reserved.</p>
+
+                </div>
+
+              </div>
+              <div class="col-xxl-3 col-lg-3 col-md-3 col-sm-6">  
+                <div class="row align-items-center">
+
+                  <div class="col">
+                    
+                    <a href="https://x.com/monsterhunter">
+                      <i class="fa-brands fa-x-twitter"></i>
+                    </a>
+
+                  </div>
+                  
+                  <div class="col">
+
+                    <a href="https://www.youtube.com/user/monsterhunter">
+                      <i class="fa-brands fa-youtube"></i>
+                    </a>
+
+                  </div>
+
+                  <div class="col">
+                    <a href="https://www.instagram.com/monsterhuntergame">
+                      <i class="fa-brands fa-instagram"></i>
+                    </a>
+                  </div>
+
+                </div>
+
+              </div>
+            </div>
+            </div>
+          </div>
+        </div>
+
+    </footer>    
 
     
 <!--Jquery js-->
@@ -101,44 +170,7 @@
 
 <!-- Isotope js-->
     <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
+
 </body>
-
-<!-- FOOTER -->
-    <footer class="custom-navbar text-light py-3">
-        <div class="container text-center align-items-center">
-            <div class="row align-items-center">
-              <div class="col-md-3 align-items-center">  
-                <img src="Media/Monster-hunter-world-logo.webp" class="img-fluid" alt="">
-              </div>
-              <div class="col-md-6">
-                <div class="h4 text-center align-items-center font-monospace">
-                  <p>© CAPCOM CO., LTD. 2018, 2019 All rights reserved.</p>
-                </div>
-              </div>
-              <div class="col-xxl-3 col-lg-3 col-md-3 col-sm-6">  
-                <div class="row align-items-center">
-                  <div class="col">
-                    <a href="https://x.com/monsterhunter">
-                      <img src="Media/X_Logo.png" class="img-fluid" alt="">
-                    </a>
-                  </div>
-                  <div class="col">
-                    <a href="https://www.youtube.com/user/monsterhunter">
-                      <img src="Media/Youtube_Logo.png" class="img-fluid" alt="">
-                    </a>
-                  </div>
-                  <div class="col">
-                    <a href="https://www.facebook.com/monsterhunter">
-                      <img src="Media/Facebook_Logo.png" class="img-fluid" alt="">
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </div>
-            </div>
-          </div>
-        </div>
-
-    </footer>
 
 </html>
