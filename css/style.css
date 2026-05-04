@@ -86,7 +86,7 @@ a > i:hover{
     row-gap: inherit;
     border-radius: 10px;
     overflow: hidden;
-    margin:auto; 
+    margin-bottom: 2rem; 
 }
 
 .card {
