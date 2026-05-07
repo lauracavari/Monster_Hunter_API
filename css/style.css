@@ -7,6 +7,8 @@
     --color-text: #f5f5f5;
     }
 
+
+
 body {
         background-image: url('../media/img/Fondo_MonsterHunterWorld.jpg'); /* Image URL */
         background-size: cover; /* Scale image to cover entire area */
@@ -14,6 +16,38 @@ body {
         background-repeat: no-repeat; /* Prevent tiling */
         background-attachment: fixed; /* Keep image fixed during scroll */
 
+        font-family: "Open Sans", sans-serif;
+}
+/* Fuentes */
+h1 {
+    font-family: "Noto Serif", serif;
+    font-optical-sizing: auto;
+    font-weight: 800;
+    font-style: normal;
+}
+h5 {
+    font-family: "Noto Serif", serif;
+    font-optical-sizing: auto;
+    font-weight: 800;
+    font-style: normal;
+}
+h6 {
+    font-family: "Noto Serif", serif;
+    font-optical-sizing: auto;
+    font-weight: 800;
+    font-style: normal;
+}
+
+/* Fontawesome social icons */
+
+a > i{
+    font-size: 1.7rem;
+    color: #f5f5f5;
+    transition: 300ms;
+}
+a > i:hover{
+    color: #150B0A;
+    transition: 300ms;
 }
 
 /* POSICIONAMIENTO DE LAS IMAGENES PARA UTILIZAR GSAP */
@@ -56,7 +90,8 @@ h1 {
     row-gap: inherit;
     border-radius: 10px;
     overflow: hidden;
-    margin:auto; 
+    /* margin:auto;  */
+    margin-bottom: 2rem;
 }
 
 /* .card {
@@ -77,10 +112,11 @@ h1 {
     width: 100%;
     object-fit: contain;
 }
+/*======= */
+h1 {
+  color: white;
 
-
-
-/* Caja de textos personalizados index*/
+}
 
 .infBox p[class*="lead"] {
     padding: 1rem 2rem;
@@ -169,3 +205,74 @@ h1 {
   transform: translateY(40px);
 }
 
+
+
+.container-fluid .btn{
+    margin-bottom: 50px;
+    background-color: #3E2D2D;
+    border: rgb(67, 36, 19) 1px solid;
+    cursor: pointer;
+    box-shadow: 0 9px #1d1d1d;
+}
+
+/* Footer logo */
+
+.footerLogo{
+    width: 100%;
+    max-width: 261px;
+    height: auto;
+}
+
+/* Loading screen */
+.preload {
+    overflow: hidden;
+}
+.loader-wrapper{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #3E2D2D;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+}
+
+.Loading{
+    display: flex;
+    gap: 12px;
+}
+
+.Loading div {
+    width: 1rem;
+    height: 1rem;
+    background: #FFFAEF;
+    border-radius: 50%;
+    box-shadow: 0 -0.4rem rgba(60, 0, 80, 0.1)
+    inset;
+
+    animation: cycle 1s ease-in-out infinite;
+}
+
+.Loading div:nth-child(1){
+    animation-delay: 0;
+}
+.Loading div:nth-child(2){
+    animation-delay: 0.2s;
+}
+.Loading div:nth-child(3){
+    animation-delay: 0.4s;
+}
+@keyframes cycle {
+    0%{
+        transform: translateY(0);
+    }
+    50%{
+        transform: translateY(1rem);
+    }
+    100%{
+        transform: translateY(0);
+    }    
+}
