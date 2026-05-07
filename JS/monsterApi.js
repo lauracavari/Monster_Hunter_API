@@ -44,13 +44,14 @@ $(document).ready(function(){
 
             <div class="central ">
                 <div class="card mb-3 custom-navbar h-100">
-
-                        <img src="Media/img/${data.id}.webp" class="card-img-top h-10" alt="imagen" >
-
-                    <div class="card-body text-center ">
+                    <div class="imgWikiMonster">
+                        <img src="Media/img/${data.id}.webp" class="w-50 card-img-top h-10" alt="imagen" >
+                        <div class="card-body text-center align-self-center">
                         <h5 class="card-title">Nombre del monstruo: ${data.name}</h5>
                         <h5 class="card-subtitle">Tipo: ${species}</h5>
+                        </div>                    
                     </div>
+    
                 </div>
             </div>
 
