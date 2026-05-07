@@ -42,7 +42,7 @@ $(document).ready(function(){
             let infoMonster = `
             <div class="row row-cols-1 row-cols-md-2 justify-content-center g-4">
 
-            <div class="col justify-content-center ">
+            <div class="central ">
                 <div class="card mb-3 custom-navbar h-100">
 
                         <img src="Media/img/${data.id}.webp" class="card-img-top h-10" alt="imagen" >
@@ -54,18 +54,18 @@ $(document).ready(function(){
                 </div>
             </div>
 
-            <div class="col">
-                <div class="card mb-3 custom-navbar h-100">
-                    <div class="card-body custom-navbar">
+            <div class="panel">
+                <div class="card mb-3 custom-imagen h-100">
+                    <div class="card-body custom-imagen ">
                         <h6>Descripción</h6>
                         <p>${data.description }</p>
                     </div>
                 </div>
             </div>
             
-            <div class="col">
-                <div class="card mb-3 custom-navbar h-100">
-                    <div class="card-body custom-navbar">
+            <div class="panel">
+                <div class="card mb-3 custom-imagen h-100">
+                    <div class="card-body custom-imagen">
                             <h6>Localizaciones y Recompensas</h6>
                             <p>${locationsText}</p>
                             <p>Más líneas de información.</p>
@@ -73,9 +73,9 @@ $(document).ready(function(){
                 </div>
             </div>
 
-            <div class="col">
-                    <div class="card mb-3 custom-navbar h-100">
-                        <div class="card-body custom-navbar">
+            <div class="panel">
+                    <div class="card mb-3 custom-imagen h-100">
+                        <div class="card-body custom-imagen">
                             <h6>Debilidades</h6>
                             <p>${weaknessesText}</p>
                         </div>

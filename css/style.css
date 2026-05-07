@@ -156,7 +156,7 @@ h1 {
 
 
 /* Caja de textos personalizados WikiMonster */
-.card {
+.central {
   background-image: url("../media/img/Caja_grande.png");
   background-size: 100% 100%;
   background-repeat: no-repeat;
@@ -170,13 +170,7 @@ h1 {
   border: none;
   margin-top: 20px;
 }
-.card-body .custom-navbar {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  text-align: center;
-  background-image: url("../media/img/Caja_Horizontal.png");
-}
+
  /* .card-body {
   flex-grow: 1;
   display: flex;
@@ -191,6 +185,11 @@ h1 {
 .custom-navbar{
     background-color: var(--color-brown);
     color: var(--color-text);
+}
+
+.custom-imagen{
+    --bs-card-bg: none;
+    background-image: url("../Media/img/Caja_Horizontal.png") no-repeat center;
 }
 
 .custom-search{
@@ -252,6 +251,8 @@ h1 {
 
     animation: cycle 1s ease-in-out infinite;
 }
+
+
 
 .Loading div:nth-child(1){
     animation-delay: 0;
