@@ -48,6 +48,8 @@ fetch("https://mhw-db.com/monsters")
     })
     .finally(function(){
         $grid.isotope({ filter: '*' })
+        $(".loader-wrapper").delay(400).fadeOut("slow");
+        $("body").removeClass("preload");
     })
 
 
