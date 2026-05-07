@@ -69,6 +69,8 @@ a > i:hover{
   opacity: 0;
   transform: rotate(20deg) scale(1);
 }
+
+
 /* ----------------------------------------------- */
 .banner{
   height: 300px;      
@@ -218,6 +220,22 @@ h1 {
 .container-fluid .btn{
     margin-bottom: 50px;  
     cursor: pointer; 
+}
+
+.bottonback{
+
+    height: 50%;
+    width: 10%;
+}
+
+.imgWikiMonster{
+    width: 100%;
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 10px;
 }
 
 /* Footer logo */
