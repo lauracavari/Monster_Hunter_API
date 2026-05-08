@@ -43,7 +43,7 @@ $(document).ready(function(){
             <div class="row row-cols-1 row-cols-md-2 justify-content-center g-4">
 
             <div class="col justify-content-center ">
-                <div class="card mb-3 custom-navbar h-100">
+                <div class="card mb-3 monster-navbar h-100">
                     <div class="imgWikiMonster">
                         <img src="Media/img/${data.id}.webp" class="w-50 card-img-top h-10" alt="imagen" >
                         <div class="card-body text-center align-self-center">
@@ -56,8 +56,8 @@ $(document).ready(function(){
             </div>
 
             <div class="col">
-                <div class="card mb-3 custom-navbar h-100">
-                    <div class="card-body custom-navbar">
+                <div class="card mb-3 monster-navbar h-100">
+                    <div class="card-body monster-info">
                         <h6>Descripción</h6>
                         <p>${data.description }</p>
                     </div>
@@ -65,8 +65,8 @@ $(document).ready(function(){
             </div>
             
             <div class="col">
-                <div class="card mb-3 custom-navbar h-100">
-                    <div class="card-body custom-navbar">
+                <div class="card mb-3 monster-navbar h-100">
+                    <div class="card-body monster-info">
                             <h6>Localizaciones y Recompensas</h6>
                             <p>${locationsText}</p>
                             <p>Más líneas de información.</p>
@@ -75,8 +75,8 @@ $(document).ready(function(){
             </div>
 
             <div class="col">
-                    <div class="card mb-3 custom-navbar h-100">
-                        <div class="card-body custom-navbar">
+                    <div class="card mb-3 monster-navbar h-100">
+                        <div class="card-body monster-info">
                             <h6>Debilidades</h6>
                             <p>${weaknessesText}</p>
                         </div>

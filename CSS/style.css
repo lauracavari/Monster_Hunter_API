@@ -180,12 +180,29 @@ h1 {
   border: none;
   margin-top: 20px;
 }
-.card-body .custom-navbar {
+/* .card-body .custom-navbar {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   text-align: center;
   background-image: url("../media/img/Caja_Horizontal.png");
+} */
+
+
+.monster-card .card-body{
+    background: transparent;
+}
+.monster-info{
+    background-image: url("../media/img/Caja_Horizontal.png");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+   padding: 2rem;
+   color: rgb(255, 255, 255);
+    min-height: 250px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
 }
  /* .card-body {
   flex-grow: 1;
@@ -236,6 +253,7 @@ h1 {
     justify-content: flex-start;
     align-items: center;
     padding: 10px;
+    color: rgb(255, 255, 255);
 }
 
 /* Footer logo */
