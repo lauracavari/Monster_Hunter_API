@@ -189,21 +189,7 @@ h1 {
 } */
 
 
-.monster-card .card-body{
-    background: transparent;
-}
-.monster-info{
-    background-image: url("../media/img/Caja_Horizontal.png");
-    background-size: 100% 100%;
-    background-repeat: no-repeat;
-   padding: 2rem;
-   color: rgb(255, 255, 255);
-    min-height: 250px;
 
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-}
  /* .card-body {
   flex-grow: 1;
   display: flex;
