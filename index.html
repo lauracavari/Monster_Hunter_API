@@ -7,30 +7,33 @@
     
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-
-    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Fontawesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+  
+  
   </head>
   <body>
-    
-    <!-- NavBar -->
-    <nav class="navbar navbar-dark custom-navbar">
-      <div class="container-fluid">
-        <div class="col-sm-2">
-
-          <a class="navbar-brand">
-            <img src="Media/Monster-hunter-world-logo.webp" class="img-fluid" alt="">
-          </a>
-
+    <!-- NAVBAR -->
+   <nav class="navbar navbar-dark custom-navbar">
+        <div class="container d-flex align-items-center">
+             <a class="navbar-brand d-flex align-items-center" href="index.html">
+                <img src="media/img/Monster-hunter-world-logo.webp" alt="Logo" height="60" class="me-2">
+                
+            </a>
+            <form class="d-flex align-items-center" role="search">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
+              <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
         </div>
-        <form class="d-flex" role="search">
-          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
-          <button class="btn btn-outline-success" type="submit">Search</button>
-        </form>
-      </div>
     </nav>
 
     <div class="text-center">
-      <img class="w-100" src="Media\monster-hunter-gq.webp" alt="">
+      <img class="w-100" src="media/img/monster-hunter-gq.webp" alt="">
     </div>
 
     <div class="container col-xxl-8 px-4 py-5">
@@ -43,13 +46,13 @@
   <div class="container"></div>
   <div class="carousel-inner">
     <div class="carousel-item active">
-      <img src="Media/monster_hunter-_world_iceborne_-_publicity_-_h_2019.webp" class="img-fluid" alt="...">
+      <img src="media/img/monster_hunter-_world_iceborne_-_publicity_-_h_2019.webp" class="img-fluid" alt="...">
     </div>
     <div class="carousel-item">
-      <img src="Media\MonsterHunterWordl_1.jpg" class="d-block w-100" alt="...">
+      <img src="media/img/MonsterHunterWordl_1.jpg" class="d-block w-100" alt="...">
     </div>
     <div class="carousel-item">
-      <img src="Media/monster-hunter-gq.webp" class="img-fluid" alt="...">
+      <img src="media/img/Monster_hunter_Carrusel.png" class="img-fluid" alt="...">
     </div>
   </div>
   <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
@@ -67,16 +70,16 @@
     <div class="container-fluid col-xxl-11 px-4 py-5 infBox">
       <div class="row flex-lg-row align-items-center g-1 py-5">
                 <div class="col-lg-5 col-md-12">
-          <img src="Media\Monsterhunter4.jpg" class="img-fluid" alt="...">
+          <img src="media/img/Monsterhunter4.jpg" class="img-monster" alt="...">
         </div>
-        <div class="col-lg-7 col-md-12">
+        <div class="custom-text col-lg-7 col-md-12">
           <h1>Monster Hunter World</h1>
           <p class="lead"> Tu tarea es aceptar misiones de caza de monstruos en una gran variedad de hábitats.Abátelos y recibe materiales que podrás utilizar para crear armas y armaduras más poderosas con las que enfrentarte a monstruos aún más peligrosos.</p>
         </div>
       </div>
       <div class="row flex-lg-row-reverse align-items-center g-1 py-5">
         <div class="col-lg-5 col-md-12">
-          <img src="Media\Monster.jpg" class="img-fluid" alt="...">
+          <img src="media/img/Monster.jpg" class="img-monster2" alt="...">
         </div>
         <div class="col-lg-7 col-md-12">
           <h1>Historia</h1>
@@ -86,36 +89,36 @@
     </div>
 
     <div class="container-fluid col-xxl-12 py-1 text-center">
-      <a class="btn btn-primary" href="Monter_Edex.html" role="button">Explorar monstruos</a>
-      <a class="btn btn-primary" href="WikiMonster.html" role="button">Explorar monstruos</a>
+      <a class="btn btn-primary  custom-btn" href="monter_Edex.html" role="button">Explorar monstruos</a>
+      
     </div> 
 
     <!-- FOOTER -->
     <footer class="custom-navbar text-light py-3">
 
-        <div class="container text-center align-items-center">
+        <div class="container text-center align-items-center d-flex justify-content-center">
 
             <div class="row align-items-center">
               <div class="col-md-3 align-items-center">  
-                <img src="Media/Monster-hunter-world-logo.webp" class="img-fluid" alt="">
+                <img src="media/img/Monster-hunter-world-logo.webp" class="img-fluid" alt="">
 
               </div>
               <div class="col-md-6">
 
-                <div class="h5 text-center align-items-center font-monospace">
+                <div class="h5 text-center align-items-center" style="font-size: 0.9rem;">
 
                   <p>© CAPCOM CO., LTD. 2018, 2019 All rights reserved.</p>
 
                 </div>
 
               </div>
-              <div class="col-xxl-3 col-lg-3 col-md-3 col-sm-6">  
+              <div class="col-xxl-3 col-lg-3 col-md-3 col-sm-12">  
                 <div class="row align-items-center">
 
                   <div class="col">
                     
                     <a href="https://x.com/monsterhunter">
-                      <img src="Media/X_Logo.png" class="img-fluid" alt="">
+                      <i class="fa-brands fa-x-twitter"></i>
                     </a>
 
                   </div>
@@ -123,14 +126,14 @@
                   <div class="col">
 
                     <a href="https://www.youtube.com/user/monsterhunter">
-                      <img src="Media/Youtube_Logo.png" class="img-fluid" alt="">
+                      <i class="fa-brands fa-youtube"></i>
                     </a>
 
                   </div>
 
                   <div class="col">
-                    <a href="https://www.facebook.com/monsterhunter">
-                      <img src="Media/Facebook_Logo.png" class="img-fluid" alt="">
+                    <a href="https://www.instagram.com/monsterhuntergame">
+                      <i class="fa-brands fa-instagram"></i>
                     </a>
                   </div>
 
@@ -144,25 +147,18 @@
 
     </footer>
 
-<!--Jquery js-->
+    <!--Jquery js-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-
-    <!-- FOOTER -->
-    <footer class="custom-navbar text-light py-3">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-2">
-                    <div class="bg-secondary" style="height:40px;"></div>
-                </div>
-                <div class="col-md-10">
-                    <p class="mb-1">Texto de pie de página</p>
-                    <p class="mb-0">Más información</p>
-                </div>
-            </div>
-        </div>
-    </footer>
-
+    
+    <!-- GSAP -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+    
     <!-- Bootstrap js -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    
+    <!-- Our Script -->
+    <script src="JS/script.js"></script>
+    
   </body>
 </html>

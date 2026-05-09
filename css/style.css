@@ -7,16 +7,71 @@
     --color-text: #f5f5f5;
     }
 
+
+
+    * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+    }
+
+
+
 body {
-        background-image: url('..//Media/Fondo_MonsterHunterWorld.jpg'); /* Image URL */
+        background-image: url('../media/img/Fondo_MonsterHunterWorld.jpg'); /* Image URL */
         background-size: cover; /* Scale image to cover entire area */
         background-position: center; /* Center the image */
         background-repeat: no-repeat; /* Prevent tiling */
         background-attachment: fixed; /* Keep image fixed during scroll */
 
+        font-family: "Open Sans", sans-serif;
+}
+/* Fuentes */
+h1 {
+    font-family: "Noto Serif", serif;
+    font-optical-sizing: auto;
+    font-weight: 800;
+    font-style: normal;
+}
+h5 {
+    font-family: "Noto Serif", serif;
+    font-optical-sizing: auto;
+    font-weight: 800;
+    font-style: normal;
+}
+h6 {
+    font-family: "Noto Serif", serif;
+    font-optical-sizing: auto;
+    font-weight: 800;
+    font-style: normal;
+}
+
+/* Fontawesome social icons */
+
+a > i{
+    font-size: 1.7rem;
+    color: #f5f5f5;
+    transition: 300ms;
+}
+a > i:hover{
+    color: #150B0A;
+    transition: 300ms;
+}
+
+/* POSICIONAMIENTO DE LAS IMAGENES PARA UTILIZAR GSAP */
+.img-monster {
+  width: 100%;
+  opacity: 0;
+  transform: rotate(-20deg) scale(1);
+}
+.img-monster2 {
+  width: 100%;
+  opacity: 0;
+  transform: rotate(20deg) scale(1);
 }
 
 
+/* ----------------------------------------------- */
 .banner{
   height: 300px;      
   overflow: hidden;
@@ -34,22 +89,25 @@ body {
     margin: 20px 0;
 }
 
+/* <<<<<<< HEAD */
+h1 {
+    color:#f5f5f5;
 
-
-
+}
 .Monster_Grid {
     top: auto;
     background-color: var(--color-dark);
     row-gap: inherit;
     border-radius: 10px;
     overflow: hidden;
-    margin:auto; 
+    /* margin:auto;  */
+    margin-bottom: 2rem;
 }
 
-.card {
+/* .card {
     --bs-card-bg: var(--color-brown);
     color: var(--color-text);
-}
+} */
 
 .dropdown-item.active {
     background-color: #146c43;
@@ -64,13 +122,87 @@ body {
     width: 100%;
     object-fit: contain;
 }
+/*======= */
+h1 {
+  color: white;
+
+}
+
+.naranja{
+    height: 50%;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
 
 .infBox p[class*="lead"] {
     padding: 1rem 2rem;
-    background-color: rgb(20, 9, 2);
-    border: rgb(67, 36, 19) 1px solid;
+    min-height: 200%;
+    background: url("../media/img/Caja_Horizontal.png") no-repeat center;
+    background-size: 100% 100%; 
+    border: none;
     color: rgb(230, 230, 230);
+    
 }
+
+.custom-btn {
+  padding: 30px 20px; /* tamaño del botón */
+  color: var(--color-dark);
+  background: url("../media/img/Boton.png") no-repeat center;
+  background-size: contain;
+  border: none;
+   
+}
+
+/* Caja de textos personalizados monsterEdex*/
+.user-card {
+  background: url("../media/img/Caja_grande.png") no-repeat center;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+  overflow: hidden;
+   flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  text-align: center;
+    transform: translateY(-20px);
+    color:  rgb(230, 230, 230);
+}
+
+
+/* Caja de textos personalizados WikiMonster */
+.card {
+  background-image: url("../media/img/Caja_grande.png");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+
+.custom-search-bottom{
+    padding: 10px 20px; /* tamaño del botón */
+  color: var(--color-dark);
+  background: url("../media/img/Boton_horizontal.png") no-repeat center;
+  background-size: contain;
+  border: none;
+  margin-top: 20px;
+}
+.card-body .custom-navbar {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: center;
+  background-image: url("../media/img/Caja_Horizontal.png");
+}
+ /* .card-body {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  text-align: center;
+    transform: translateY(-20px);
+    color:  rgb(230, 230, 230);
+}  */
 
 
 .custom-navbar{
@@ -79,15 +211,98 @@ body {
 }
 
 .custom-search{
-    background-color: var(--color-white);
-    color: var(--color-dark);
+    padding: 10px 20px; /* tamaño del botón */
+  color: var(--color-dark);
+  background: url("../media/img/Boton.svg") no-repeat center;
+  background-size: contain;
+  border: none;
+}
+
+.col-md-10 p {
+  transform: translateY(40px);
 }
 
 
+
 .container-fluid .btn{
-    margin-bottom: 50px;
+    margin-bottom: 50px;  
+    cursor: pointer; 
+}
+
+.bottonback{
+
+    height: 50%;
+    width: 10%;
+}
+
+.imgWikiMonster{
+    width: 100%;
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 10px;
+}
+
+/* Footer logo */
+
+.footerLogo{
+    width: 100%;
+    max-width: 261px;
+    height: auto;
+}
+
+/* Loading screen */
+.preload {
+    overflow: hidden;
+}
+.loader-wrapper{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
     background-color: #3E2D2D;
-    border: rgb(67, 36, 19) 1px solid;
-    cursor: pointer;
-    box-shadow: 0 9px #1d1d1d;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+}
+
+.Loading{
+    display: flex;
+    gap: 12px;
+}
+
+.Loading div {
+    width: 1rem;
+    height: 1rem;
+    background: #FFFAEF;
+    border-radius: 50%;
+    box-shadow: 0 -0.4rem rgba(60, 0, 80, 0.1)
+    inset;
+
+    animation: cycle 1s ease-in-out infinite;
+}
+
+.Loading div:nth-child(1){
+    animation-delay: 0;
+}
+.Loading div:nth-child(2){
+    animation-delay: 0.2s;
+}
+.Loading div:nth-child(3){
+    animation-delay: 0.4s;
+}
+@keyframes cycle {
+    0%{
+        transform: translateY(0);
+    }
+    50%{
+        transform: translateY(1rem);
+    }
+    100%{
+        transform: translateY(0);
+    }    
 }
