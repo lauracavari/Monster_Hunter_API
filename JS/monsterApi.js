@@ -57,7 +57,7 @@ $(document).ready(function(){
 
             <div class="col">
                 <div class="card mb-3 custom-navbar h-100">
-                    <div class="card-body custom-navbar">
+                    <div class="panel">
                         <h6>Descripción</h6>
                         <p>${data.description }</p>
                     </div>
@@ -65,8 +65,8 @@ $(document).ready(function(){
             </div>
             
             <div class="col">
-                <div class="card mb-3 custom-navbar h-100">
-                    <div class="card-body custom-navbar">
+                <div class=" horizont mb-3 custom-navbar h-100">
+                    <div class="rectangulo">
                             <h6>Localizaciones y Recompensas</h6>
                             <p>${locationsText}</p>
                             <p>Más líneas de información.</p>
@@ -75,8 +75,8 @@ $(document).ready(function(){
             </div>
 
             <div class="col">
-                    <div class="card mb-3 custom-navbar h-100">
-                        <div class="card-body custom-navbar">
+                    <div class="horizont mb-3 custom-navbar h-100">
+                        <div class="rectangulo">
                             <h6>Debilidades</h6>
                             <p>${weaknessesText}</p>
                         </div>
