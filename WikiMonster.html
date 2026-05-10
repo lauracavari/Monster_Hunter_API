@@ -131,6 +131,25 @@
 
     <!-- Our Js of Monster_Dex Search-->
     <script src="JS/monsterApi.js"></script>
+    
+    <!-- Ham Menu -->
+    <script>
+        // Ham Menu
+        const hamMenu = document.querySelector('.ham-menu');
+        const offScreenMenu = document.querySelector('.off-screen-menu');
+        hamMenu.addEventListener('click', () => {
+        hamMenu.classList.toggle('active');
+        offScreenMenu.classList.toggle('active');
+        })
+      // Función para cerrar el menú si la pantalla se agranda
+      window.addEventListener('resize', () => {
+          // 768px es el breakpoint 'md' de Bootstrap
+          if (window.innerWidth >= 768) {
+              hamMenu.classList.remove('active');
+              offScreenMenu.classList.remove('active');
+          }
+      });          
+    </script>
 
 </body>
 </html>

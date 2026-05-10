@@ -364,3 +364,89 @@ h1 {
     cursor: pointer;
     box-shadow: 0 1px #1d1d1d4d;
 }
+
+/* Ham Menu */
+/* Off-screen Menu Styling */
+.off-screen-menu {
+    background-color: #3E2D2D;
+    height: 100vh;
+    width: 100%;
+    max-width: 100%;
+    position: fixed;
+    top: 0;
+    right: -200vw; /* Hidden by default */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 2rem;
+    transition: .3s ease;
+    z-index: 1000;
+}
+
+.off-screen-menu.active {
+    right: 0; /* Slides in */
+}
+
+/* Burger Icon Styling */
+.ham-menu {
+    color: #146c43;
+    height: 50px;
+    width: 40px;
+    position: relative;
+    cursor: pointer;
+    z-index: 1001; /* Above the menu */
+}
+
+.ham-menu span {
+    height: 5px;
+    width: 100%;
+    background-color: rgb(174, 152, 123);
+    border-radius: 10px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: .3s ease;
+}
+.ham-menu:hover span{
+    background-color: antiquewhite;
+}
+
+/* Burger Animation to 'X' */
+.ham-menu span:nth-child(1) { top: 25%; }
+.ham-menu span:nth-child(3) { top: 75%; }
+
+.ham-menu.active span:nth-child(1) {
+    top: 50%;
+    transform: translate(-50%, -50%) rotate(45deg);
+}
+.ham-menu.active span:nth-child(2) { opacity: 0; }
+.ham-menu.active span:nth-child(3) {
+    top: 50%;
+    transform: translate(-50%, -50%) rotate(-45deg);
+}
+
+/* List cleaning */
+.off-screen-menu ul {
+    list-style: none;
+    padding: 0;
+}
+.off-screen-menu a {
+    color: rgb(174, 152, 123);
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-decoration: none;
+    transition: 500ms;
+}
+.off-screen-menu a:hover {
+    color: antiquewhite;
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-decoration: none;
+    transition: 500ms;
+}
+.off-screen-menu{
+    gap: 2rem;
+}
