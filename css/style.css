@@ -207,7 +207,18 @@ h1 {
 .InputNav:focus{
     color: rgb(40, 55, 67);
 }
-
+.form-control{
+    background-color: antiquewhite;
+    border:0;
+    transition: 500ms;
+}
+.form-control:focus{
+    color: var(--bs-body-color);
+    background-color: rgb(189, 171, 148);
+    outline: 0;
+    box-shadow: 0 0 0 .20rem rgba(220, 214, 183, 0.25);
+    transition: 500ms;
+}
 .custom-navbar{
     background-color: var(--color-brown);
     color: var(--color-text);
