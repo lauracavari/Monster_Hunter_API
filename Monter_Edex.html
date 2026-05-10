@@ -41,16 +41,18 @@
 
     <!-- NAVBAR -->
    <nav class="navbar navbar-dark custom-navbar">
-        <div class="container d-flex align-items-center">
+        <div class="container">
              <a class="navbar-brand d-flex align-items-center" href="index.html">
-                <img src="media/img/Monster-hunter-world-logo.webp" alt="Logo" height="60" class="me-2">
-                
+                <img src="media/Monster-hunter-world-logo.webp" alt="Logo" height="60" class="me-2">
             </a>
-            <form class="d-flex align-items-center" role="search">
-              <input class="form-control me-2 rounded-5 InputNav" type="search" placeholder="Search" aria-label="Search"/>
-              <!-- <img src="Media\img\Barra de busqueda.png"> -->
-              <button class="btn btn-outline-success rounded-5" type="submit">Search</button>
-            </form>
+            <div class="d-flex flex-row align-items-center justify-content-center gap-5">
+              <a class="Links" href="index.html">Inicio</a>
+              <a class="Links" href="Monter_Edex.html">MonsterEdex</a>
+              <form class="d-flex " role="search">
+                <input class="form-control me-2 rounded-5 NavInput" type="search" placeholder="Search..." aria-label="Search"/>
+                <button class="btn rounded-5" type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+              </form>                  
+            </div>      
         </div>
     </nav>
 
@@ -58,10 +60,10 @@
       <img class="IMGheader" src="media/img/monster-hunter-gq.webp" alt="">
     </div>
     
-    <div class="searchButton">
+    <div class="searchButton ">
         <form class="d-flex" role="search">
-          <input class="form-control me-2 rounded-5" type="search" placeholder="Search" aria-label="Search"/>
-          <button class="btn btn-outline-success rounded-5" type="submit">Search</button>
+          <input class="form-control me-2 rounded-5 NavInput" type="search" placeholder="Search..." aria-label="Search"/>
+          <button class="btn rounded-5" type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
         </form>
     </div>
 
@@ -177,7 +179,7 @@
 
 <!--Jquery js-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-<!-- loader -->
+<!-- loader Fake -->
  <!-- <script>
     $(window).on("load",function(){
         $(".loader-wrapper").delay(700).fadeOut("slow");
