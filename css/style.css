@@ -294,7 +294,7 @@ h1 {
     display: flex;
     justify-content: center;
     align-items: center;
-    z-index: 2;
+    z-index: 4;
 }
 
 .Loading{
@@ -393,7 +393,7 @@ h1 {
     text-align: center;
     font-size: 2rem;
     transition: .3s ease;
-    z-index: 1000;
+    z-index: 2;
 }
 
 .off-screen-menu.active {
@@ -407,7 +407,7 @@ h1 {
     width: 40px;
     position: relative;
     cursor: pointer;
-    z-index: 1001; /* Above the menu */
+    z-index: 3; /* Above the menu */
 }
 
 .ham-menu span {
