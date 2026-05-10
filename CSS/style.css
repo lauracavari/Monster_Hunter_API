@@ -200,7 +200,13 @@ h1 {
     transform: translateY(-20px);
     color:  rgb(230, 230, 230);
 }  */
-
+.InputNav{
+    background-color: #c3ae85;
+    border: 0;
+}
+.InputNav:focus{
+    color: rgb(40, 55, 67);
+}
 
 .custom-navbar{
     background-color: var(--color-brown);
