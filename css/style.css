@@ -364,3 +364,14 @@ h1 {
     cursor: pointer;
     box-shadow: 0 1px #1d1d1d4d;
 }
+
+/* Drop down */
+
+.btn-check:checked+.btn, .btn.active, .btn.show, .btn:first-child:active, :not(.btn-check)+.btn:active{
+    color: rgb(174, 152, 123);
+    background-color: #432413;
+    transition: 500ms;
+}
+.dropdown-menu.show {
+    background-color: #432413;
+}
