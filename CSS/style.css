@@ -200,13 +200,13 @@ h1 {
     transform: translateY(-20px);
     color:  rgb(230, 230, 230);
 }  */
-.InputNav{
+/* .InputNav{
     background-color: #c3ae85;
     border: 0;
 }
 .InputNav:focus{
     color: rgb(40, 55, 67);
-}
+} */
 .form-control{
     background-color: antiquewhite;
     border:0;
@@ -219,6 +219,7 @@ h1 {
     box-shadow: 0 0 0 .20rem rgba(220, 214, 183, 0.25);
     transition: 500ms;
 }
+
 .custom-navbar{
     background-color: var(--color-brown);
     color: var(--color-text);
@@ -319,4 +320,35 @@ h1 {
     100%{
         transform: translateY(0);
     }    
+}
+
+/* Nav */
+.Links{
+    color: rgb(174, 152, 123);
+    font-size: 18px;
+    font-weight: bold;
+    text-decoration: none;
+    transition: 500ms;
+}
+.Links:hover{
+    color: antiquewhite;
+    font-size: 18px;
+    font-weight: bold;
+    text-decoration: none;
+    transition: 500ms;
+}
+
+.btn{
+    color: antiquewhite;
+    background-color: rgb(67, 36, 19);
+    border: 0;
+    cursor: pointer;
+    box-shadow: 0 5px #1d1d1d4d;
+}
+.btn:hover{
+    color: rgb(174, 152, 123);
+    background-color: rgb(67, 36, 19);
+    border: 0;
+    cursor: pointer;
+    box-shadow: 0 1px #1d1d1d4d;
 }
