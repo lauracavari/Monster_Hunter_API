@@ -188,6 +188,11 @@ h1 {
     transition: 500ms;
 }
 
+.horizont{
+    background-image: url("../Media/img/Caja_Horizontal.png");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
 .custom-search-bottom{
     padding: 10px 20px; /* tamaño del botón */
   color: var(--color-dark);
@@ -196,13 +201,16 @@ h1 {
   border: none;
   margin-top: 20px;
 }
-.card-body .custom-navbar {
+/* .card-body .custom-navbar {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   text-align: center;
   background-image: url("../media/img/Caja_Horizontal.png");
-}
+} */
+
+
+
  /* .card-body {
   flex-grow: 1;
   display: flex;
@@ -249,7 +257,30 @@ h1 {
   transform: translateY(40px);
 }
 
+/* Esto afecta al cuadrado que está a la derecha de la img del monstruo */
+.panel{ 
+    width: 100%;
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    padding: 70px;
+    color: rgb(255, 255, 255);
+}
 
+/* Esto afecta a las cajas horizontales de abajo  */
+.rectangulo{
+    width: 100%;
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 10px;
+    color: rgb(255, 255, 255);
+}
 
 .container-fluid .btn{
     margin-bottom: 50px;  
@@ -270,6 +301,7 @@ h1 {
     justify-content: flex-start;
     align-items: center;
     padding: 10px;
+    color: rgb(255, 255, 255);
 }
 
 /* Footer logo */
