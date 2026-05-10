@@ -92,7 +92,8 @@ $(document).ready(function(){
 
         })
         .finally(function(){
-
+        $(".loader-wrapper").delay(400).fadeOut("slow");
+        $("body").removeClass("preload");
     })
 
 });
