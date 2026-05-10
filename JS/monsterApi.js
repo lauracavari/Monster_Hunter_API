@@ -92,9 +92,7 @@ $(document).ready(function(){
 
         })
         .finally(function(){
-        // Load after charging API (en principio)
-        $(".loader-wrapper").delay(400).fadeOut("slow");
-        $("body").removeClass("preload");
+
     })
 
 });

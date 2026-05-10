@@ -7,11 +7,7 @@
     --color-text: #f5f5f5;
     }
 
-    * {
-        box-sizing: border-box;
-        margin: 0;
-        padding: 0;
-    }
+
 
     * {
         box-sizing: border-box;
@@ -90,7 +86,7 @@ a > i:hover{
 .searchButton {
     display: flex;
     justify-content: center;
-    margin: 1.5rem 0;
+    margin: 20px 0;
 }
 
 /* <<<<<<< HEAD */
@@ -132,43 +128,86 @@ h1 {
 
 }
 
-.form-control{
-    background-color: antiquewhite;
-    border:0;
-    transition: 500ms;
-}
-.form-control:focus{
-    color: var(--bs-body-color);
-    background-color: rgb(189, 171, 148);
-    outline: 0;
-    box-shadow: 0 0 0 .20rem rgba(220, 214, 183, 0.25);
-    transition: 500ms;
+.d-flex-text-start-my-4a-lign-items-start{
+    left: 10%;
 }
 
 .infBox p[class*="lead"] {
     padding: 1rem 2rem;
-    background-color: rgb(20, 9, 2);
-    border: rgb(67, 36, 19) 1px solid;
-    background-color: rgb(20, 9, 2);
-    border: rgb(67, 36, 19) 1px solid;
+    min-height: 200%;
+    background: url("../media/img/Caja_Horizontal.png") no-repeat center;
+    background-size: 100% 100%; 
+    border: none;
     color: rgb(230, 230, 230);
+    
 }
 
-/* Nav */
-.Links{
-    color: rgb(174, 152, 123);
-    font-size: 18px;
-    font-weight: bold;
-    text-decoration: none;
-    transition: 500ms;
+.custom-btn {
+  padding: 30px 20px; /* tamaño del botón */
+  color: var(--color-dark);
+  background: url("../media/img/Boton.png") no-repeat center;
+  background-size: contain;
+  border: none;
+   
 }
-.Links:hover{
-    color: antiquewhite;
-    font-size: 18px;
-    font-weight: bold;
-    text-decoration: none;
-    transition: 500ms;
+
+/* Caja de textos personalizados monsterEdex*/
+.user-card {
+  background: url("../media/img/Caja_grande.png") no-repeat center;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+  overflow: hidden;
+   flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  text-align: center;
+    transform: translateY(-20px);
+    color:  rgb(230, 230, 230);
 }
+
+
+/* Caja de textos personalizados WikiMonster */
+.card {
+  background-image: url("../media/img/Caja_grande.png");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+
+.custom-search-bottom{
+    padding: 10px 20px; /* tamaño del botón */
+  color: var(--color-dark);
+  background: url("../media/img/Boton_horizontal.png") no-repeat center;
+  background-size: contain;
+  border: none;
+  margin-top: 20px;
+}
+.card-body .custom-navbar {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: center;
+  background-image: url("../media/img/Caja_Horizontal.png");
+}
+ /* .card-body {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  text-align: center;
+    transform: translateY(-20px);
+    color:  rgb(230, 230, 230);
+}  */
+.InputNav{
+    background-color: #c3ae85;
+    border: 0;
+}
+.InputNav:focus{
+    color: rgb(40, 55, 67);
+}
+
 .custom-navbar{
     background-color: var(--color-brown);
     color: var(--color-text);
@@ -184,28 +223,6 @@ h1 {
 
 .col-md-10 p {
   transform: translateY(40px);
-}
-.btn{
-    color: antiquewhite;
-    background-color: rgb(67, 36, 19);
-    border: 0;
-    cursor: pointer;
-    box-shadow: 0 5px #1d1d1d4d;
-}
-.btn:hover{
-    color: rgb(174, 152, 123);
-    background-color: rgb(67, 36, 19);
-    border: 0;
-    cursor: pointer;
-    box-shadow: 0 1px #1d1d1d4d;
-}
-
-.container-fluid .btn{
-    margin-bottom: 50px;
-    background-color: #3E2D2D;
-    border: rgb(67, 36, 19) 1px solid;
-    cursor: pointer;
-    box-shadow: 0 9px #1d1d1d;
 }
 
 
