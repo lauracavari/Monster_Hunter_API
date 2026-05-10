@@ -128,10 +128,6 @@ h1 {
 
 }
 
-.d-flex-text-start-my-4a-lign-items-start{
-    left: 10%;
-}
-
 .infBox p[class*="lead"] {
     padding: 1rem 2rem;
     min-height: 200%;
@@ -228,7 +224,10 @@ h1 {
     color: rgb(40, 55, 67);
 } */
 .form-control{
-    background-color: antiquewhite;
+    /* background-color: antiquewhite; */
+    background-image: url("../Media/img/Barra_de_busqueda.png");
+    background-position: center;
+    background-size: 200%;
     border:0;
     transition: 500ms;
 }
