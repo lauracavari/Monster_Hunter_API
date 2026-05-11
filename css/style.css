@@ -223,20 +223,23 @@ h1 {
 .InputNav:focus{
     color: rgb(40, 55, 67);
 } */
+
 .form-control{
     /* background-color: antiquewhite; */
     background-image: url("../Media/img/Barra_de_busqueda.png");
     background-position: center;
     background-size: 200%;
     border:0;
-    transition: 500ms;
+    transition: all 2s ease-in-out 2s;
 }
 .form-control:focus{
     color: var(--bs-body-color);
-    background-color: rgb(189, 171, 148);
+    background-image: url("../Media/img/Barra_de_busqueda_focus.png");
+    background-position: center;
+    background-size: 200%;
     outline: 0;
     box-shadow: 0 0 0 .20rem rgba(220, 214, 183, 0.25);
-    transition: 500ms;
+    transition: all 2s ease-in-out 2s;
 }
 
 .custom-navbar{
