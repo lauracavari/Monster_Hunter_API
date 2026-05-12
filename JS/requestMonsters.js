@@ -30,9 +30,9 @@ fetch("https://mhw-db.com/monsters")
             let card = `
             <div class="col-xxl-3 col-md-4 col-sm-12 ${usersArr[i].id} ${locationClasses}">
                 <a href="WikiMonster.html?id=${usersArr[i].id}" class="text-decoration-none text-dark">
-                    <div class="card h-100 user-card border-0 align-items center p-2">
+                    <div class="card h-100 user-card border-0 align-items center p-4">
                         <img src="Media/img/${usersArr[i].id}.webp"
-                                class="card-img-top monster-img user-img p-3"
+                                class="card-img-top monster-img user-img p-4"
                             alt="${usersArr[i].name}">
                         <div class="card-body">
                             <h5 class="card-title">${usersArr[i].name}</h5>
