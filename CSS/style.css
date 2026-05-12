@@ -129,7 +129,7 @@ h1 {
 }
 
 .infBox p[class*="lead"] {
-    padding: 1rem 2rem;
+    padding: 2rem 2rem 2rem 2rem;
     min-height: 200%;
     background: url("../media/img/Caja_Horizontal.png") no-repeat center;
     background-size: 100% 100%; 
